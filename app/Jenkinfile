@@ -11,7 +11,7 @@ pipeline {
                 script {
                     sh 'cd app'
                     sh 'ls'
-                    sh 'cd && docker build -t test .'
+                    sh 'cd app && docker build -t test .'
                 }
             }
      
