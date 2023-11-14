@@ -14,8 +14,10 @@ pipeline {
     stage('Build Docker Image') {
             steps {
                 script {
+                    sh 'cd app'
+                    sh 'docker build -t cicd:${DOCKER_IMAGE} .'
                     // Your Docker build commands here
-                    docker.build("cicd:${BUILD_NUMBER}")
+                    // docker.build("cicd:${BUILD_NUMBER}")
                 }
             }
         }
