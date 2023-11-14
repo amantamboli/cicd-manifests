@@ -9,6 +9,7 @@ pipeline {
     stage('Checkout') {
         steps {
                 script {
+                    sh 'ls'
                     sh 'docker build -t test .'
                 }
             }
