@@ -16,7 +16,7 @@ pipeline {
             }
         }
     }
-    }
+    
     stage('Push Docker Image') {
         environment {
         REGISTRY_CREDENTIALS = credentials('docker-cred')
