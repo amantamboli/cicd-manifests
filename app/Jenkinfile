@@ -9,9 +9,7 @@ pipeline {
     stage('Checkout') {
         steps {
                 script {
-                    sh 'cd app'
                     sh 'docker build -t test .'
-                    sh 'docker run test'
                 }
             }
      
