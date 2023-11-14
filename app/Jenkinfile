@@ -7,11 +7,14 @@ pipeline {
   }
   stages {
     stage('Checkout') {
-      script {
+        steps {
+                script {
                     sh 'cd app'
                     sh 'docker build -t test .'
                     sh 'docker run test'
                 }
+            }
+     
     }
     stage('Build Docker Image') {
         environment {
