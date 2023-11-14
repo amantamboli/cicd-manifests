@@ -11,7 +11,7 @@ pipeline {
         DOCKER_IMAGE = "stokesy77/cicd:${BUILD_NUMBER}"
       }
       steps {
-        sh 'cd app && docker build -t DOCKER_IMAGE .'
+        sh 'cd app && docker build -t ${DOCKER_IMAGE} .'
       }
     }
     stage('Push Docker Image') {
