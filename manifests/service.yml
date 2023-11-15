@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: cicd-service
 spec:
-  type: NodePort
-  # type: LoadBalancer
+  # type: NodePort
+  type: LoadBalancer
   ports:
   - name: http
-    port: 80
+    port: 5000
     targetPort: 5000
     protocol: TCP
     nodePort: 30000
