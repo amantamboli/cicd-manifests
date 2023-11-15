@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: cicd
-        image: stokesy77/cicd:replaceImageTag
+        image: stokesy77/cicd:10
         ports:
         - containerPort: 5000
