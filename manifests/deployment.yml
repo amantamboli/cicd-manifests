@@ -19,4 +19,4 @@ spec:
         # image: stokesy77/cicd:8
         image: stokesy77/cicd:replaceImageTag
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
